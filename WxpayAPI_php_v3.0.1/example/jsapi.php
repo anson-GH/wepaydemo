@@ -115,13 +115,17 @@ $editAddress = $tools->GetEditAddressParameters();
 		}
 	};
 	
+	function valueset(p1) {
+		alert('123');
+    return p1;              // The function returns the product of p1 and p2
+}
 	</script>
 </head>
 <body>
     <br/>
     <font color="#9ACD32"><b>该笔订单支付金额为<span style="color:#f00;font-size:50px">1分</span>钱</b></font><br/><br/>
 	<div align="center">
-		<button style="width:210px; height:50px; border-radius: 15px;background-color:#FE6714; border:0px #FE6714 solid; cursor: pointer;  color:white;  font-size:16px;" type="button" onclick="callpay()" >立即支付</button>
+		<button style="width:210px; height:50px; border-radius: 15px;background-color:#FE6714; border:0px #FE6714 solid; cursor: pointer;  color:white;  font-size:16px;" type="button" onclick="callpay() valueset(105)" >立即支付</button>
 	</div>
 </body>
 </html>
